@@ -18,6 +18,6 @@ while read url; do
     echo Vendoring $url | indent
     curl -L --silent $url > $1/bin/helm.tar.gz
     cd $1/bin && \
-      tar -xzvf helm.tar.gz --strip 1 '*helm' && rm helm.tar.gz
+      tar -xzvf helm.tar.gz --strip 1 --wildcards '*helm' && rm helm.tar.gz
   fi
 done < .helm_url
