@@ -1,4 +1,4 @@
-heroku-buildpack-terraform
+heroku-buildpack-helm
 ==========================
 
-A buildpack to install terraform on a heroku instance
+A buildpack to install helm on a heroku instance
